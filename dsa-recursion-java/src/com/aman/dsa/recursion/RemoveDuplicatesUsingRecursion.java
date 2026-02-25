@@ -10,11 +10,11 @@ public class RemoveDuplicatesUsingRecursion {
         }
 
         if (hash[str.charAt(idx) - 'a']) {
-            removeDuplicate(str, idx += 1, newString);
+            removeDuplicate(str, idx + 1, newString);
         } else {
             newString += str.charAt(idx);
             hash[str.charAt(idx) - 'a'] = true;
-            removeDuplicate(str, idx += 1, newString);
+            removeDuplicate(str, idx + 1, newString);
         }
     }
 

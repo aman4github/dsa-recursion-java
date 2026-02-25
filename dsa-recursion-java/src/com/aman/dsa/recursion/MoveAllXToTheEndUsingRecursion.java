@@ -12,10 +12,10 @@ public class MoveAllXToTheEndUsingRecursion {
 
         if (str.charAt(idx) == 'x') {
             System.out.println("Count++");
-            move(str, idx += 1, count += 1, newStr);
+            move(str, idx + 1, count + 1, newStr);
         } else {
             newStr += str.toLowerCase().charAt(idx);
-            move(str, idx += 1, count, newStr);
+            move(str, idx + 1, count, newStr);
         }
     }
 
